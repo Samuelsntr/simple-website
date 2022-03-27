@@ -1,0 +1,287 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font: 16px/28px arial, sans-serif;
+  background-color: grey;
+  background-image: url(ptt.jpg);
+}
+
+.top-bar {
+  height: 50px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  background-color: burlywood;
+  border-bottom: 5px solid darkgray;
+  font: bold 20px arial;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  z-index: 9999;
+}
+
+.container {
+  width: 960px;
+  margin: 70px auto;
+  background-color: #eaeaea;
+  position: relative;
+}
+
+.ig {
+  width: 100px;
+  height: 100px;
+  background-image: url(ig.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+
+.header {
+  padding: 20px;
+  padding-bottom: 5px;
+  background-color: #eaeaea;
+}
+
+.header .judul {
+  padding: 3px;
+  margin-top: 10px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.header li {
+  display: inline-block;
+  text-transform: lowercase;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.header a {
+  text-decoration: none;
+  color: darkgoldenrod;
+  padding: 5px;
+}
+
+.header a:hover {
+  background-color: maroon;
+}
+
+.cover {
+  height: 350px;
+  background-image: url(meja.jpg);
+  background-size: cover;
+  background-position: 0 -280px;
+  border-top: 5px solid peru;
+  border-bottom: 5px solid darkslategrey;
+}
+
+.utama {
+  width: 600px;
+  color: black;
+  padding: 20px;
+  background-color: #eaeaea;
+  box-sizing: border-box;
+  float: left;
+}
+
+.utama h2 {
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.utama .penulis {
+  font-size: 10px;
+  margin-top: -15px;
+}
+
+.utama .penulis a {
+  color: peru;
+  text-decoration: none;
+}
+.utama p {
+  padding-top: 15px;
+}
+
+.footer {
+  background-color: gray;
+  padding: 10px;
+}
+
+.footer .copy {
+  font-size: 13px;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: 20px;
+  background-color: #eaeaea;
+}
+
+.sidebar img {
+  width: 70px;
+  height: 69px;
+  float: left;
+  padding-right: 10px;
+}
+
+.sidebar h3 {
+  font-weight: bold;
+  color: grey;
+}
+
+.sidebar p {
+  font: 13px/18px arial;
+  color: black;
+}
+
+/* CLEAR FIX */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
